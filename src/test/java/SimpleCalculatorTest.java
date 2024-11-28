@@ -1,3 +1,4 @@
+import com.ll.SimpleCalculator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,5 +13,13 @@ public class SimpleCalculatorTest {
         int result = simpleCalculator.plus(2, 5);
 
         assertThat(result).isEqualTo(7);
+    }
+
+    @Test
+    @DisplayName("11 + 131 = 142")
+    public void t2() {
+        int result = simpleCalculator.plus(11, 131);
+
+        assertThat(result).isEqualTo(142);
     }
 }
