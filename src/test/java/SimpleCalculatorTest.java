@@ -54,4 +54,12 @@ public class SimpleCalculatorTest {
 
         assertThat(result).isEqualTo(288);
     }
+
+    @Test
+    @DisplayName("8 * 4 = 2")
+    public void t7() {
+        int result = simpleCalculator.divide(8, 4);
+
+        assertThat(result).isEqualTo(2);
+    }
 }
