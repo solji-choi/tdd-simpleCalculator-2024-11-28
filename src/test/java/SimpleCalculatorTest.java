@@ -46,4 +46,12 @@ public class SimpleCalculatorTest {
 
         assertThat(result).isEqualTo(48);
     }
+
+    @Test
+    @DisplayName("12 * 24 = 288")
+    public void t6() {
+        int result = simpleCalculator.multifly(12, 24);
+
+        assertThat(result).isEqualTo(288);
+    }
 }
