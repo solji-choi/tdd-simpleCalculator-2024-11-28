@@ -22,4 +22,12 @@ public class SimpleCalculatorTest {
 
         assertThat(result).isEqualTo(142);
     }
+
+    @Test
+    @DisplayName("6 - 2 = 4")
+    public void t3() {
+        int result = simpleCalculator.minus(6, 2);
+
+        assertThat(result).isEqualTo(4);
+    }
 }
