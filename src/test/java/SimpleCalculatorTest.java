@@ -74,6 +74,7 @@ public class SimpleCalculatorTest {
     @Test
     @DisplayName("4 + 8 = 12")
     public void t9() {
+
         int result = simpleCalculator.run("4 + 8");
 
         assertThat(result).isEqualTo(12);
