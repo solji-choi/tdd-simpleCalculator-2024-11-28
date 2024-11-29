@@ -30,4 +30,12 @@ public class SimpleCalculatorTest {
 
         assertThat(result).isEqualTo(4);
     }
+
+    @Test
+    @DisplayName("3 - 9 = -6")
+    public void t4() {
+        int result = simpleCalculator.minus(3, 9);
+
+        assertThat(result).isEqualTo(-6);
+    }
 }
