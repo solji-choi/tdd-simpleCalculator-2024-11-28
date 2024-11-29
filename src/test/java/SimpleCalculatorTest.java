@@ -56,10 +56,26 @@ public class SimpleCalculatorTest {
     }
 
     @Test
-    @DisplayName("8 * 4 = 2")
+    @DisplayName("8 / 4 = 2")
     public void t7() {
         int result = simpleCalculator.divide(8, 4);
 
         assertThat(result).isEqualTo(2);
+    }
+
+    @Test
+    @DisplayName("4 / 3 = 1")
+    public void t8() {
+        int result = simpleCalculator.divide(4, 3);
+
+        assertThat(result).isEqualTo(1);
+    }
+
+    @Test
+    @DisplayName("4 + 8 = 12")
+    public void t9() {
+        int result = simpleCalculator.run(4, 8);
+
+        assertThat(result).isEqualTo(12);
     }
 }
